@@ -82,6 +82,11 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+.button-wrapper {
+  margin: 0 auto;
+}
+
+
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -235,6 +240,8 @@ h3 {
 .testimonial-carousel .owl-dots .owl-dot {
   display: inline-block;
 }
+
+
 
 .testimonial-carousel .owl-dots .owl-dot>span {
   display: inline-block;
