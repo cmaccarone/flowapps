@@ -110,15 +110,22 @@ jQuery(document).ready(function ($) {
       url: action,
       data: str,
       success: function (msg) {
-        console.log(msg);
-        if (msg == 'OK') {
-          this_form.find('.loading').slideUp();
-          this_form.find('.sent-message').slideDown();
-          this_form.find("input:not(input[type=submit]), textarea").val('');
-        } else {
-          this_form.find('.loading').slideUp();
-          this_form.find('.error-message').slideDown().html(msg);
-        }
+
+        this_form.find('.loading').slideUp();
+        this_form.find('.sent-message').slideDown();
+        this_form.find("input:not(input[type=submit]), textarea").val('');
+        this_form.find('.error-message').slideUp()
+
+
+
+
+      },
+      dataType: "json",
+      error: function (req, status, error) {
+        this_form.find('.error-message').slideDown().html(msg);
+        console.log(error);
+        console.log(status);
+        console.log(req);
       }
     });
     return false;
