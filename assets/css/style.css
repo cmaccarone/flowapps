@@ -740,7 +740,49 @@ h3 {
   color: #fff;
 }
 
-.hero-section .iphone-wrap {
+.iphone-section {
+  overflow: visible;
+  padding: 0;
+}
+
+.iphone-wrap {
+  position: relative;
+  height: 400px;
+  min-width: 250px;
+  max-width: 30vw;
+  margin: 0 auto;
+}
+
+.iphone-wrap img {
+  position: absolute;
+  height: 100%;
+}
+
+.iphone-wrap .phone-1 {
+  padding: 10% 0;
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.3);
+}
+
+.iphone-wrap .phone-2 {
+  right: 0;
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 992px) {
+  .iphone-wrap {
+    height: 500px;
+    max-width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .iphone-wrap {
+    max-width: 250px;
+  }
+}
+
+/* .hero-section .iphone-wrap {
   position: relative;
 }
 
@@ -794,8 +836,7 @@ h3 {
     margin-top: 0px;
     margin-left: 180px;
   }
-}
-
+} */
 /*--------------------------------------------------------------
 # Nav
 --------------------------------------------------------------*/
