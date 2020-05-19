@@ -459,6 +459,11 @@ h3 {
   font-weight: 600;
 }
 
+a,
+#surveyLink {
+  color: #1391a5;
+}
+
 .php-email-form .sent-message {
   display: none;
   color: #fff;
