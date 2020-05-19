@@ -8,3 +8,8 @@ function ClearFields() {
     document.getElementById("newForm").reset();
 
 }
+
+function upDateCompanyName() {
+    var companyName = "FlowDev Mobile Apps";
+    document.getElementById("companyName").innerHTML = companyName;
+}
