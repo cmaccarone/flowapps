@@ -4,7 +4,9 @@ var pageNames = {
    "page-1" : "Home",
    "page-2" : "Portfolio",
    "page-3" : "Development Process",
-   "page-4" : "Contact",
+   "page-4" : "Blog",
+   "page-5" : "Contact",
+
 }
 //setupNames of screens.
 for (var key in pageNames) {
@@ -21,6 +23,5 @@ for (var key in pageNames) {
       document.getElementsByClassName(key).text = pageNames[key];
    }
  }
-
-document.getElementsByClassName("site-logo").text = "qevka.co";
+document.querySelector("#sticky-wrapper > header > div > div > div.col-6.col-lg-2 > h1 > a").text = companyWebsite;
  
