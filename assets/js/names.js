@@ -1,10 +1,12 @@
 var companyWebsite = "qevka.com";
 var companyName = "Qevka Technologies";
+var aboutTitle = "About Qevka"
+var aboutParagraph = "Qevka's goal is to help small businesses automate their processes so they can be more effective in the marketplace."
+document.title = "Qevka Technologies";
 var pageNames = {
    "page-1" : "Home",
-   "page-2" : "Portfolio",
-   "page-3" : "Development Process",
-   "page-4" : "Blog",
+   "page-2" : "Development Process",
+   "page-4" : "Past Projects",
    "page-5" : "Contact",
 
 }
@@ -24,4 +26,5 @@ for (var key in pageNames) {
    }
  }
 document.querySelector("#sticky-wrapper > header > div > div > div.col-6.col-lg-2 > h1 > a").text = companyWebsite;
- 
+document.querySelector("body > footer > div > div:nth-child(1) > div.col-md-4.mb-4.mb-md-0 > h3").textContent = aboutTitle;
+document.querySelector("body > footer > div > div:nth-child(1) > div.col-md-4.mb-4.mb-md-0 > p:nth-child(2)").textContent = aboutParagraph;
