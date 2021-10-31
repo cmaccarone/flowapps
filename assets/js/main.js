@@ -107,6 +107,9 @@
       margin: 0,
       autoplay: true,
       smartSpeed: 1000,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true
+      //more options here: https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
     });
   };
   siteOwlCarousel();
